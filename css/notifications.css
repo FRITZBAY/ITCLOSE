@@ -1,0 +1,100 @@
+/* ==========================================================================
+SYSTEME DE GESTION DE L'ALERT DE NOTIFICATION APRES UN EVENEMENT
+   ========================================================================== */
+
+#alert_notifications
+{
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;*/
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    border-radius: 6px;
+
+    z-index: 2000;
+    color: #000000;
+    background-color: white;
+    font: normal 12px HelveticaNeve, Helvetica, Arial, sans-serif;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dbdbdb));
+    background-image: -webkit-linear-gradient(top, #ffffff, #dbdbdb);
+    background-image: -moz-linear-gradient(top, #ffffff, #dbdbdb);
+    background-image: -o-linear-gradient(top, #ffffff, #dbdbdb);
+    background-image: -ms-linear-gradient(top, #ffffff, #dbdbdb);
+    background-image: linear-gradient(top, #ffffff, #dbdbdb);
+
+    box-shadow: 0px 4px 30px rgba(0,0,0,0.5);
+}
+
+.alert_notification
+{
+    cursor: pointer;
+    border-bottom: 1px solid #C1C1C1;
+    box-shadow: 0px 1px 0px #FFF;
+    position: relative;
+}
+
+.alert_notification:last-child{
+    border-bottom: none;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+.alert_title{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px 0;
+
+}
+
+.alert_p{
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
+.left1
+{
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0,0,0, 0.2);
+    padding: 0 10px;
+}
+
+.right1{
+    margin-left: 70px;
+}
+
+.img1
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background-size: auto 100%;
+    box-shadow: rgba(0,0,0,0.4) -1px 0px 16px inset;
+}
+
+.success1
+{
+    background-color: #63a153;
+    color: #FFFFFF;
+    text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;
+    background-image: linear-gradient(top, #81c270, #63a153);
+}
+
+.error1
+{
+    background-color: #FA5650;
+    color: #FFFFFF;
+    text-shadow: rgba(0,0,0,0.4) 0px 1px 0px;
+    background-image: linear-gradient(top, #FA5650, #D1363D);
+}
